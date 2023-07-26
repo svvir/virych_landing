@@ -12,7 +12,7 @@ const  Header = () => {
       <span className="ml-3 text-xl">Tailblocks</span>
     </a>
     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a className="mr-5 hover:text-gray-900">First Link</a>
+      <Link href="/" className="mr-5 hover:text-gray-900">Main</Link>
       <a className="mr-5 hover:text-gray-900">Second Link</a>
       <a className="mr-5 hover:text-gray-900">Third Link</a>
       <Link href="/contact" className="mr-5 hover:text-gray-900">Contact</Link>
