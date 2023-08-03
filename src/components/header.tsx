@@ -13,7 +13,7 @@ const  Header = () => {
     </Link>
     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
       <Link href="/" className="mr-5 hover:text-gray-900">Main</Link>
-      <a className="mr-5 hover:text-gray-900">Second Link</a>
+      <a className="mr-5 hover:text-gray-900">Second Linkkk</a>
       <a className="mr-5 hover:text-gray-900">Third Link</a>
       <Link href="/contact" className="mr-5 hover:text-gray-900">Contact</Link>
     </nav>
