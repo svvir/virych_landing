@@ -9,7 +9,7 @@ const botToken = '6439603556:AAH68MwpJ_bxvydO73vFy74Z0E2InjTEQ8c';
 const bot = new TelegramBot(botToken, { polling: true });
 
 // Обробка команди /start
-bot.onText(/\/start/, (msg) => {
+bot.onText(/\/start/, (msg: { chat: { id: any; }; }) => {
   const chatId = msg.chat.id;
   bot.sendMessage(chatId, 'Вітаю! Це бот. Напишіть щось, і я відповім.');
 });
@@ -21,7 +21,7 @@ const yourChatId = '422934038';
 let userChatId = null;
 
 // Обробка всіх повідомлень
-bot.on('message', (msg) => {
+bot.on('message', (msg: { chat: { id: any; }; text: any; }) => {
   const chatId = msg.chat.id;
   const text = msg.text;
 
